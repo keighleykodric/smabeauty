@@ -2,14 +2,14 @@ import { useState } from "react";
 import Head from "next/head";
 import { Header } from "../components/Header";
 import { Menu } from "../components/Menu";
+import { Button } from "../components/Button";
 import { Copyright } from "../components/Copyright";
 import { FAQ } from "../components/FAQ";
 import { ServiceList } from "../components/ServiceList";
 import { Services } from "../components/Services";
 
 // Smart Components
-import Service from "https://framer.com/m/Service-ukmH.js@gGeHTNEyEanrfRPN0A4K";
-import Button from "https://framer.com/m/Button-v2hH.js@4tX8nO4PmAUzaEc23X23";
+// import Button from "https://framer.com/m/Button-v2hH.js@4tX8nO4PmAUzaEc23X23";
 
 export default function Home() {
   const [menu, showMenu] = useState(false);

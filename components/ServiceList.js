@@ -4,7 +4,7 @@ import Link from "next/link";
 import { ServiceItem } from "./ServiceItem";
 
 // Smart Components
-import Service from "https://framer.com/m/Service-ukmH.js@8LnDieBJ5j4wFkuhYiXg";
+// import Service from "https://framer.com/m/Service-ukmH.js@8LnDieBJ5j4wFkuhYiXg";
 
 export function ServiceList({ children, title, description, img, url }) {
   return (

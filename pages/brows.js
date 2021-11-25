@@ -4,6 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { Header } from "../components/Header";
 import { Menu } from "../components/Menu";
+import { Button } from "../components/Button";
 import { Copyright } from "../components/Copyright";
 import { FAQ } from "../components/FAQ";
 import { ServiceList } from "../components/ServiceList";
@@ -11,7 +12,7 @@ import { Services } from "../components/Services";
 import { Phone, Envelope, MapPin } from "phosphor-react";
 
 // Smart Components
-import Button from "https://framer.com/m/Button-v2hH.js@4tkWJXqtGg11ECDenDba";
+// import Button from "https://framer.com/m/Button-v2hH.js@4tkWJXqtGg11ECDenDba";
 
 export default function Home() {
   const [menu, showMenu] = useState(false);

@@ -2,7 +2,8 @@ import { useState } from "react";
 import Head from "next/head";
 import Link from "next/link";
 import Image from "next/image";
-import Button from "https://framer.com/m/Button-v2hH.js@4tkWJXqtGg11ECDenDba";
+// import Button from "https://framer.com/m/Button-v2hH.js@4tkWJXqtGg11ECDenDba";
+import { Button } from "./Button";
 
 export function Services({ children, title, description, img, url }) {
   return (
@@ -25,11 +26,7 @@ export function Services({ children, title, description, img, url }) {
               "_blank"
             )
           }
-          icon={false}
-          icon1="send"
           label="Book Now"
-          label1={true}
-          variant="Primary"
         />
       </div>
     </div>

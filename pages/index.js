@@ -8,7 +8,7 @@ import { ServiceList } from "../components/ServiceList";
 import { Phone, Envelope, MapPin } from "phosphor-react";
 
 // Smart Components
-import Button from "https://framer.com/m/Button-v2hH.js@4tX8nO4PmAUzaEc23X23";
+// import Button from "https://framer.com/m/Button-v2hH.js@4tX8nO4PmAUzaEc23X23";
 import { Header } from "../components/Header";
 
 export default function Home() {

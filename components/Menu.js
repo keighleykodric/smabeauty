@@ -1,9 +1,4 @@
-import { useState } from "react";
-import Head from "next/head";
 import Link from "next/link";
-import Image from "next/image";
-// import { Button } from "./Button";
-import { Phone, Envelope, MapPin } from "phosphor-react";
 
 // Smart Components
 import Button from "https://framer.com/m/Button-v2hH.js@4tkWJXqtGg11ECDenDba";

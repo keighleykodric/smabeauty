@@ -11,8 +11,7 @@ import { Services } from "../components/Services";
 import { Phone, Envelope, MapPin } from "phosphor-react";
 
 // Smart Components
-import Service from "https://framer.com/m/Service-ukmH.js@gGeHTNEyEanrfRPN0A4K";
-import Button from "https://framer.com/m/Button-v2hH.js@4tX8nO4PmAUzaEc23X23";
+import Button from "https://framer.com/m/Button-v2hH.js@4tkWJXqtGg11ECDenDba";
 
 export default function Home() {
   const [menu, showMenu] = useState(false);

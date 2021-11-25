@@ -1,13 +1,16 @@
 import Link from "next/link";
+import { Button } from "./Button";
 
 // Smart Components
-import Button from "https://framer.com/m/Button-v2hH.js@4tkWJXqtGg11ECDenDba";
+// import Button from "https://framer.com/m/Button-v2hH.js@4tkWJXqtGg11ECDenDba";
 
 export function Menu({ children, close }) {
   return (
     <div onClick={close} className="menu">
       <Link href="/">
-        <Button label="Home" icon={false} variant="Text-Primary" />
+        <Button label="Home"  variant="button button-primary-text" icon={false}>
+          Home
+        </Button>
       </Link>
       <Link href="/brows">
         <Button label="Brows" icon={false} variant="Text-Primary" />

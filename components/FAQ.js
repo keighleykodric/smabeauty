@@ -6,7 +6,6 @@ import Image from "next/image";
 
 import { Collapse } from "../components/Collapse";
 import { CaretRight, CaretDown } from "phosphor-react";
-import Button from "https://framer.com/m/Button-v2hH.js@4tX8nO4PmAUzaEc23X23";
 import useCollapse from "react-collapsed";
 
 export function FAQ({ children, title, description, img, url }) {

@@ -5,8 +5,6 @@ import Image from "next/image";
 
 // Smart Components
 import Service from "https://framer.com/m/Service-ukmH.js@8LnDieBJ5j4wFkuhYiXg";
-import Button from "https://framer.com/m/Button-v2hH.js@4tX8nO4PmAUzaEc23X23";
-import ServicesList from "https://framer.com/m/ServicesList-3HLD.js@LwiK1rz9ywx4QzRfAT09";
 
 export function ServiceList({ children, title, description, img, url }) {
   return (

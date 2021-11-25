@@ -7,12 +7,10 @@ import { Button } from "./Button";
 export function Header({ menu }) {
   return (
     <motion.div className="header">
-      <Link href="/">
+      <Link href="/" passHref>
         <Button
           // Using default values:
-          click={menu}
           label="SMAbeauty"
-
         />
       </Link>
       <Button

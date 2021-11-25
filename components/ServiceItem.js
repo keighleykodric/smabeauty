@@ -1,37 +1,48 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
+import Link from "next/link";
 import Image from "next/image";
 
-export function ServiceItem({ img, click, title, description }) {
+export function ServiceItem({ img, click, title, description, href }) {
   const [hover, isHover] = useState(true);
 
   return (
-    <motion.div
-      onClick={click}
-      className="service-item"
-      onMouseOver={() => isHover(true)}
-      onMouseOut={() => isHover(false)}
-    >
-      <motion.div className="service-item-image-container">
-        <motion.img
-          className="service-item-image"
-          src={img}
-          width={hover ? "64px" : "48px"}
-          height={hover ? "64px" : "48px"}
-        />
+    <Link href={href} passHref>
+      <motion.div
+        onClick={click}
+        className="service-item"
+        onMouseOver={() => isHover(true)}
+        onMouseOut={() => isHover(false)}
+      >
+        <motion.div className="service-item-image-container">
+          <motion.img
+            className="service-item-image"
+            src={img}
+            width={hover ? "64px" : "48px"}
+            height={hover ? "64px" : "48px"}
+          />
+          {/* <Image
         {/* <Image
           src={img}
           alt={title}
           width={hover ? "64px" : "48px"}
           height={hover ? "64px" : "48px"}
         /> */}
-      </motion.div>
-      <motion.div className="service-item-content">
-        <motion.div className="service-item-title">{title}</motion.div>
-        <motion.div className="service-item-desciption">
-          {description}
+        </motion.div>
+        <motion.div className="service-item-content">
+          <motion.div className="service-item-title">{title}</motion.div>
+          <motion.div className="service-item-desciption">
+            {description}
+          </motion.div>
         </motion.div>
       </motion.div>
-    </motion.div>
+    </Link>
   );
 }
+
+ServiceItem.defaultProps = {
+  img: "/images/banner.png",
+  title: "Service Name",
+  description: "Brief description",
+  href: "",
+};

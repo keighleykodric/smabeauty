@@ -7,28 +7,28 @@ import { Button } from "./Button";
 export function Menu({ children, close }) {
   return (
     <div onClick={close} className="menu">
-      <Link href="/">
-        <Button label="Home"  variant="button button-primary-text" icon={false}>
+      <Link href="/" passHref>
+        <Button href="/" label="Home"  variant="button button-primary-text" icon={false}>
           Home
         </Button>
       </Link>
-      <Link href="/brows">
-        <Button label="Brows" icon={false} variant="Text-Primary" />
+      <Link href="/brows" passHref>
+        <Button href="/" label="Brows" icon={false} variant="Text-Primary" />
       </Link>
-      <Link href="/eyes">
-        <Button label="Eyes" icon={false} variant="Text-Primary" />
+      <Link href="/eyes" passHref>
+        <Button href="/" label="Eyes" icon={false} variant="Text-Primary" />
       </Link>
-      <Link href="/lips">
-        <Button label="Lips" icon={false} variant="Text-Primary" />
+      <Link href="/lips" passHref>
+        <Button href="/" label="Lips" icon={false} variant="Text-Primary" />
       </Link>
-      <Link href="/freckles">
-        <Button label="Freckles" icon={false} variant="Text-Primary" />
+      <Link href="/freckles" passHref>
+        <Button href="/" label="Freckles" icon={false} variant="Text-Primary" />
       </Link>
-      <Link href="/tooth-gems">
-        <Button label="Tooth Gems" icon={false} variant="Text-Primary" />
+      <Link href="/tooth-gems" passHref>
+        <Button href="/" label="Tooth Gems" icon={false} variant="Text-Primary" />
       </Link>
-      <Button id={"0002"} label="Book Now!" icon={false} variant="Primary" />
-      <Button
+      <Button href="/" id={"0002"} label="Book Now!" icon={false} variant="Primary" />
+      <Button href="/"
         click={close}
         icon={false}
         label="Close Menu"
@@ -37,3 +37,6 @@ export function Menu({ children, close }) {
     </div>
   );
 }
+
+Menu.defaultProps = {
+};

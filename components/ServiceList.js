@@ -17,41 +17,36 @@ export function ServiceList({ children, title, description, img, url }) {
       </div>
 
       <div className="card-content">
-        <Link href="/brows">
-          <ServiceItem
-            title="Brows"
-            description="Get ready for boss brows!!!"
-            img="/images/brows.png"
-          />
-        </Link>
-        <Link href="/eyes">
-          <ServiceItem
-            title="Eyes"
-            description="Smudge proof eyeliner"
-            img="/images/eye.png"
-          />
-        </Link>
-        <Link href="/lips">
-          <ServiceItem
-            title="Lips"
-            description="Fuller natural lips"
-            img="/images/lips.png"
-          />
-        </Link>
-        <Link href="/freckles">
-          <ServiceItem
-            title="Freckles"
-            description="Sunkissed all year"
-            img="/images/freckles.png"
-          />
-        </Link>
-        <Link href="/tooth-gems">
-          <ServiceItem
-            title="Freckles"
-            description="Add some sparkle to that smile"
-            img="/images/gem.png"
-          />
-        </Link>
+        <ServiceItem
+          title="Brows"
+          description="Get ready for boss brows!!!"
+          img="/images/brows.png"
+          href="/brows"
+        />
+        <ServiceItem
+          title="Eyes"
+          description="Smudge proof eyeliner"
+          img="/images/eye.png"
+          href="/eyes"
+        />
+        <ServiceItem
+          title="Lips"
+          description="Fuller natural lips"
+          img="/images/lips.png"
+          href="/lips"
+        />
+        <ServiceItem
+          title="Freckles"
+          description="Sunkissed all year"
+          img="/images/freckles.png"
+          href="/freckles"
+        />
+        <ServiceItem
+          title="Freckles"
+          description="Add some sparkle to that smile"
+          img="/images/gem.png"
+          href="/tooth-gems"
+        />
       </div>
     </div>
   );

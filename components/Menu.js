@@ -17,11 +17,13 @@ export function Menu({ children, close }) {
           Home
         </Button>
 
+        <Link href="/brows" passHref>
         <Button
           href="/brows"
           label="Brows"
           variant="Text-Primary"
         />
+        </Link>
 
         <Button
           href="/eyes"

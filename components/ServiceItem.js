@@ -18,6 +18,7 @@ export function ServiceItem({ img, click, title, description, href }) {
           <motion.img
             className="service-item-image"
             src={img}
+            alt={title}
           />
         </motion.div>
         <motion.div className="service-item-content">

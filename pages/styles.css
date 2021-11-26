@@ -325,7 +325,7 @@ background-size: 400% 400%;
   justify-content: center;
   align-items: center;
   overflow: hidden;
-  gap: 16px;
+  gap: 8px;
   z-index: 99999;
   cursor: pointer;background-color: rgba(255, 255, 255, .85);
 
@@ -343,7 +343,7 @@ background-size: 400% 400%;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 16px;
+  padding: 8px;
   box-shadow: 0px 1px 1px 0px rgba(30, 41, 58, 0.12), 0px 2px 2px 0px rgba(30, 41, 58, 0.12), 0px 4px 4px 0px rgba(30, 41, 58, 0.12), 0px 8px 8px 0px rgba(30, 41, 58, 0.12), 0px 16px 16px 0px rgba(30, 41, 58, 0.12);
   background-color: rgba(255, 68, 92, .9);
 
@@ -472,11 +472,11 @@ background-size: 400% 400%;
   height: auto; /* 96px */
   width: 100%;
   display: flex;
-  gap: 16px;
+  gap: 8px;
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
-  padding: 16px;
+  padding: 8px;
   background-color: rgba(255, 68, 92, 0.02);
   overflow: visible;
   border-radius: 12px;
@@ -561,7 +561,6 @@ background-size: 400% 400%;
 .service-item-description {
   width: 100%;
   flex-shrink: 0;
-  height: 21px;
   overflow: hidden;
   white-space: pre-wrap;
   word-wrap: break-word;
@@ -572,7 +571,7 @@ background-size: 400% 400%;
   color: #4b5f75;
   font-size: 18px;
   letter-spacing: 0px;
-  line-height: 1.2;
+  line-height: 1.4;
 }
 
 

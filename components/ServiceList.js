@@ -49,7 +49,7 @@ export function ServiceList({ children, title, description, img, url }) {
         />
         <ServiceItem
           title="Tiny Tattoos"
-          description="Itsy bitsy tint tattoos"
+          description="Itsy bitsy tiny tattoos"
           img="/images/tiny-tattoo.png"
           href="/tiny-tattoos"
         />

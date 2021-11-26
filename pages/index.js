@@ -24,6 +24,7 @@ export default function Home() {
           name="description"
           content="Vancouver Island's Cosmetic Tattoo Specialist"
         />
+        <meta name="theme-color" content="#ffebed" />
         <link rel="icon" href="/favicon.png" />
       </Head>
 

@@ -26,3 +26,8 @@ export function Copyright() {
     </div>
   );
 }
+
+
+Copyright.defaultProps = {
+  // img: "/images/banner.png",
+};

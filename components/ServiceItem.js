@@ -18,20 +18,11 @@ export function ServiceItem({ img, click, title, description, href }) {
           <motion.img
             className="service-item-image"
             src={img}
-            width={hover ? "64px" : "48px"}
-            height={hover ? "64px" : "48px"}
           />
-          {/* <Image
-        {/* <Image
-          src={img}
-          alt={title}
-          width={hover ? "64px" : "48px"}
-          height={hover ? "64px" : "48px"}
-        /> */}
         </motion.div>
         <motion.div className="service-item-content">
           <motion.div className="service-item-title">{title}</motion.div>
-          <motion.div className="service-item-desciption">
+          <motion.div className="service-item-description">
             {description}
           </motion.div>
         </motion.div>

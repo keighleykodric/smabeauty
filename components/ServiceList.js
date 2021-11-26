@@ -42,12 +42,31 @@ export function ServiceList({ children, title, description, img, url }) {
           href="/freckles"
         />
         <ServiceItem
-          title="Freckles"
+          title="Tooth Gems"
           description="Add some sparkle to that smile"
           img="/images/gem.png"
           href="/tooth-gems"
+        />
+        <ServiceItem
+          title="Tiny Tattoos"
+          description="Itsy bitsy tint tattoos"
+          img="/images/gem.png"
+          href="/tiny-tattoos"
+        />
+        <ServiceItem
+          title="Scar Camoflauge"
+          description="Repair those scars"
+          img="/images/gem.png"
+          href="/scar-camoflauge"
         />
       </div>
     </div>
   );
 }
+
+ServiceList.defaultProps = {
+  img: "/images/banner.png",
+  title: "Service Name",
+  description: "Brief description",
+  href: "",
+};

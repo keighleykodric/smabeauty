@@ -2,7 +2,9 @@ import { useState } from "react";
 import Head from "next/head";
 import Link from "next/link";
 import Image from "next/image";
+import { motion } from "framer-motion";
 import { Menu } from "../components/Menu";
+import { Divider } from "../components/Divider";
 import { Copyright } from "../components/Copyright";
 import { ServiceList } from "../components/ServiceList";
 import { Phone, Envelope, MapPin } from "phosphor-react";
@@ -30,24 +32,6 @@ export default function Home() {
 
       <div className={menu ? "" : ""}>
         <Header menu={() => showMenu(!menu)} />
-        {/* <Link href="/">
-          <Button
-            icon={false}
-            icon1="send"
-            label="SMAbeauty"
-            label1={true}
-            variant="Primary"
-          />
-        </Link>
-        <Button
-          // Using default values:
-          click={() => showMenu(!menu)}
-          icon={false}
-          icon1="send"
-          label="Menu"
-          label1={true}
-          variant="Primary"
-        /> */}
       </div>
       <div className="main">
         {/* <div className={menu ? "hide-content" : "banner"}>
@@ -72,15 +56,9 @@ export default function Home() {
             width="256px"
             height="256px"
           />
+          <motion.div className="title-1 center">{`Vancouver Island's Cosmetic Tattoo Specialist`}</motion.div>
           <ServiceList />
-          <Image
-            src="/images/sma-logo.png"
-            alt="Mapping"
-            layout="fixed"
-            sizes="100vw"
-            width="36px"
-            height="36px"
-          />
+          <Divider />
           <div className="card">
             <div className="card-header">
               <div className="card-title">
@@ -107,14 +85,7 @@ export default function Home() {
               natural facial feature and personal style.
             </div>
           </div>
-          <Image
-            src="/images/sma-logo.png"
-            alt="Mapping"
-            layout="fixed"
-            sizes="100vw"
-            width="36px"
-            height="36px"
-          />
+          <Divider />
           <div className="card">
             <div className="card-header">
               <div className="card-title">

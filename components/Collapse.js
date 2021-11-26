@@ -17,7 +17,9 @@ export function Collapse({ children, title, description, img, url }) {
           onClick: () => setExpanded((prevExpanded) => !prevExpanded),
         })}
       >
+      <motion.div className="panel-icon">
         {isExpanded ? <CaretDown size={24} /> : <CaretRight size={24} />}
+      </motion.div>
         {title}
       </motion.div>
       <motion.div className="panel-content" {...getCollapseProps()}>
@@ -26,3 +28,7 @@ export function Collapse({ children, title, description, img, url }) {
     </motion.div>
   );
 }
+
+Collapse.defaultProps = {
+  title: "Collapsable Row",
+};

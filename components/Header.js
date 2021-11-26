@@ -9,7 +9,7 @@ export function Header({ menu }) {
     <motion.div className="header">
       <Link href="/" passHref>
         <Button
-          // Using default values:
+        variant="button-primary"
           label="SMAbeauty"
         />
       </Link>
@@ -21,3 +21,7 @@ export function Header({ menu }) {
     </motion.div>
   );
 }
+
+Header.defaultProps = {
+  // img: "/images/banner.png",
+};

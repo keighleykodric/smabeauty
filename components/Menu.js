@@ -1,38 +1,79 @@
 import Link from "next/link";
-import { Button } from "./Button";
+// import { Button } from "./Button";
 
 // Smart Components
-// import Button from "https://framer.com/m/Button-v2hH.js@4tkWJXqtGg11ECDenDba";
+import Button from "https://framer.com/m/Button-v2hH.js@4tkWJXqtGg11ECDenDba";
 
 export function Menu({ children, close }) {
   return (
     <div onClick={close} className="menu">
-      <Link href="/" passHref>
-        <Button href="/" label="Home"  variant="button button-primary-text" icon={false}>
+
+        <Button
+          href="/"
+          label="Home"
+          variant="button-primary-text"
+        >
           Home
         </Button>
-      </Link>
-      <Link href="/brows" passHref>
-        <Button href="/" label="Brows" icon={false} variant="Text-Primary" />
-      </Link>
-      <Link href="/eyes" passHref>
-        <Button href="/" label="Eyes" icon={false} variant="Text-Primary" />
-      </Link>
-      <Link href="/lips" passHref>
-        <Button href="/" label="Lips" icon={false} variant="Text-Primary" />
-      </Link>
-      <Link href="/freckles" passHref>
-        <Button href="/" label="Freckles" icon={false} variant="Text-Primary" />
-      </Link>
-      <Link href="/tooth-gems" passHref>
-        <Button href="/" label="Tooth Gems" icon={false} variant="Text-Primary" />
-      </Link>
-      <Button href="/" id={"0002"} label="Book Now!" icon={false} variant="Primary" />
-      <Button href="/"
+
+        <Button
+          href="/brows"
+          label="Brows"
+          variant="button-primary-text"
+        />
+
+        <Button
+          href="/eyes"
+          label="Eyes"
+          variant="button-primary-text"
+        />
+
+        <Button
+          href="/lips"
+          label="Lips"
+          variant="button-primary-text"
+        />
+
+        <Button
+          href="/freckles"
+          label="Freckles"
+          variant="button-primary-text"
+        />
+
+        <Button
+          href="/tooth-gems"
+          label="Tooth Gems"
+          variant="button button-primary-text"
+        />
+
+        <Button
+          href="/tiny-tattoos"
+          label="Tiny Tattoos"
+          variant="button button-primary-text"
+        />
+
+        <Button
+          href="/scar-camoflauge"
+          label="Scar Camoflauge"
+          variant="button button-primary-text"
+        />
+      <Button
+        // href="/"
+        click={() =>
+          window.open(
+            "https://booking.appointy.com/en-US/smabeauty/bookings/service",
+            "_blank"
+          )
+        }
+        id={"0002"}
+        label="Book Now!"
+        variant="button-primary"
+      />
+      <Button
+        href="/"
         click={close}
-        icon={false}
         label="Close Menu"
-        variant="Text-Default"
+        variant="button-secondary"
       />
     </div>
   );

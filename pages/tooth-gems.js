@@ -1,13 +1,13 @@
 import { useState } from "react";
 import Head from "next/head";
+import Image from "next/image";
+import { motion } from "framer-motion";
 import { Header } from "../components/Header";
 import { Menu } from "../components/Menu";
+import { Divider } from "../components/Divider";
 import { Copyright } from "../components/Copyright";
-import { FAQ } from "../components/FAQ";
 import { ServiceList } from "../components/ServiceList";
 import { Services } from "../components/Services";
-
-// Smart Components
 
 export default function Home() {
   const [menu, showMenu] = useState(false);
@@ -31,53 +31,12 @@ export default function Home() {
       </div>
       <div className="main">
         <div className={menu ? "" : "content"}>
-          <Services
-            title="Tooth Gems"
-            img="/images/tooth-gems.png"
-          >
+          <motion.div className="title-1">Tooth Gems</motion.div>
+          <Services title="Tooth Gems" img="/images/tooth-gems.png">
             <div className="title-3">One Gem - $50</div>
             <div className="title-3">Two Gems - $75</div>
           </Services>
-
-          {/* <FAQ />
-          <div className="card">
-            <div className="card-header">
-              <div className="card-title">
-                <div className="title-2">Pre Care</div>
-                <div className="body">{`description`}</div>
-              </div>
-              <div className="divider"></div>
-            </div>
-
-            <div className="card-content">
-              <Button
-                icon={false}
-                icon1="send"
-                label="Learn More"
-                label1={true}
-                variant="Primary"
-              />
-            </div>
-          </div>
-          <div className="card">
-            <div className="card-header">
-              <div className="card-title">
-                <div className="title-2">After Care</div>
-                <div className="body">{`description`}</div>
-              </div>
-              <div className="divider"></div>
-            </div>
-
-            <div className="card-content">
-              <Button
-                icon={false}
-                icon1="send"
-                label="Learn More"
-                label1={true}
-                variant="Primary"
-              />
-            </div>
-          </div> */}
+          <Divider />
           <ServiceList />
           <Copyright />
         </div>

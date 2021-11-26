@@ -19,6 +19,7 @@ export function Services({ children, title, description, img, url }) {
 
       <div className="card-content">
         {children}
+        <div className="card-actions">
         <Button
           click={() =>
             window.open(
@@ -27,8 +28,17 @@ export function Services({ children, title, description, img, url }) {
             )
           }
           label="Book Now"
+          variant="button-primary"
         />
+        </div>
       </div>
     </div>
   );
 }
+
+Services.defaultProps = {
+  img: "/images/banner.png",
+  title: "Service Name",
+  description: "",
+  href: "",
+};

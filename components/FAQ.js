@@ -121,3 +121,7 @@ export function FAQ({ children, title, description, img, url }) {
     </motion.div>
   );
 }
+
+FAQ.defaultProps = {
+  // img: "/images/banner.png",
+};

@@ -50,13 +50,13 @@ export function ServiceList({ children, title, description, img, url }) {
         <ServiceItem
           title="Tiny Tattoos"
           description="Itsy bitsy tint tattoos"
-          img="/images/gem.png"
+          img="/images/tiny-tattoo.png"
           href="/tiny-tattoos"
         />
         <ServiceItem
           title="Scar Camoflauge"
           description="Repair those scars"
-          img="/images/gem.png"
+          img="/images/scar.png"
           href="/scar-camoflauge"
         />
       </div>

@@ -3,6 +3,7 @@ import Head from "next/head";
 import Link from "next/link";
 import Image from "next/image";
 import { motion } from "framer-motion";
+import { Header } from "../components/Header";
 import { Menu } from "../components/Menu";
 import { Divider } from "../components/Divider";
 import { Copyright } from "../components/Copyright";
@@ -11,7 +12,7 @@ import { Phone, Envelope, MapPin } from "phosphor-react";
 
 // Smart Components
 // import Button from "https://framer.com/m/Button-v2hH.js@4tX8nO4PmAUzaEc23X23";
-import { Header } from "../components/Header";
+// import Banner from "https://framer.com/m/Banner-uJuU.js@y83xmRG2YIzsOuVi8I81"
 
 export default function Home() {
   const [menu, showMenu] = useState(false);
@@ -42,7 +43,8 @@ export default function Home() {
             sizes="100vw"
             width="1920px"
             height="1281px"
-          />
+          /> 
+          <Banner />
         </div> */}
         <div
           //   style={content}

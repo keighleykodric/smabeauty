@@ -1,8 +1,8 @@
 import Link from "next/link";
 // import { Button } from "./Button";
 
-// Smart Components
-import Button from "https://framer.com/m/Button-v2hH.js@4tkWJXqtGg11ECDenDba";
+// Smart Components;
+import Button from "https://framer.com/m/Button-v2hH.js@Ov6Fct6PQvBgEbCDFQRF"
 
 export function Menu({ children, close }) {
   return (
@@ -11,7 +11,8 @@ export function Menu({ children, close }) {
         <Button
           href="/"
           label="Home"
-          variant="button-primary-text"
+          // variant="button-primary-text"
+          variant="Text-Primary"
         >
           Home
         </Button>
@@ -19,43 +20,43 @@ export function Menu({ children, close }) {
         <Button
           href="/brows"
           label="Brows"
-          variant="button-primary-text"
+          variant="Text-Primary"
         />
 
         <Button
           href="/eyes"
           label="Eyes"
-          variant="button-primary-text"
+          variant="Text-Primary"
         />
 
         <Button
           href="/lips"
           label="Lips"
-          variant="button-primary-text"
+          variant="Text-Primary"
         />
 
         <Button
           href="/freckles"
           label="Freckles"
-          variant="button-primary-text"
+          variant="Text-Primary"
         />
 
         <Button
           href="/tooth-gems"
           label="Tooth Gems"
-          variant="button button-primary-text"
+          variant="Text-Primary"
         />
 
         <Button
           href="/tiny-tattoos"
           label="Tiny Tattoos"
-          variant="button button-primary-text"
+          variant="Text-Primary"
         />
 
         <Button
           href="/scar-camoflauge"
           label="Scar Camoflauge"
-          variant="button button-primary-text"
+          variant="Text-Primary"
         />
       <Button
         // href="/"
@@ -67,13 +68,13 @@ export function Menu({ children, close }) {
         }
         id={"0002"}
         label="Book Now!"
-        variant="button-primary"
+        // variant="button-primary"
       />
       <Button
         href="/"
         click={close}
         label="Close Menu"
-        variant="button-secondary"
+        variant="Text-Default"
       />
     </div>
   );

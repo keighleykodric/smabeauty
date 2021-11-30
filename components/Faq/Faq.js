@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import { Card } from "../Card";
 import { Collapse } from "../Collapse";
 
-import styles from "./Faq.module.scss";
+import styles from "./faq.module.scss";
 
 export const Faq = ({ className }) => {
   let faqClassName = styles.faq;

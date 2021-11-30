@@ -1,4 +1,4 @@
-import "../styles/Global.scss"
+import "../styles/global.scss"
 import "../styles/Typography.scss";
 import "./styles.scss";
 

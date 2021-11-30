@@ -1,13 +1,12 @@
 import { useState } from "react";
+import { motion } from "framer-motion";
 import Head from "next/head";
 import Image from "next/image";
-import { motion } from "framer-motion";
 import { Header } from "../components/Header";
 import { Menu } from "../components/Menu";
 import { Divider } from "../components/Divider";
 import { Care } from "../components/Care";
-import { Button } from "../components/Button/index.js";
-import { Copyright } from "../components/Copyright/Copyright";
+import { Copyright } from "../components/Copyright";
 import { Faq } from "../components/Faq";
 import { ServiceList } from "../components/ServiceList";
 import { Card } from "../components/Card";
@@ -19,7 +18,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>SMAbeauty - Scar Camoflauge</title>
+        <title>SMAbeauty - Scar Camouflage</title>
         <meta
           name="description"
           content="Vancouver Island's Cosmetic Tattoo Specialist"

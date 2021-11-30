@@ -1,1 +1,1 @@
-export { Faq } from './Faq.js';
+export { Faq } from './Faq';

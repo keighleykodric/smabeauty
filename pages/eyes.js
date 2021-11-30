@@ -7,9 +7,11 @@ import { Menu } from "../components/Menu";
 import { Divider } from "../components/Divider";
 import { Care } from "../components/Care";
 import { Copyright } from "../components/Copyright";
-import { FAQ } from "../components/FAQ";
+import { Faq } from "../components/Faq";
 import { ServiceList } from "../components/ServiceList";
-import { Services } from "../components/Services";
+import { Card } from "../components/Card";
+
+import styles from "../styles/Home.module.scss";
 
 export default function Home() {
   const [menu, showMenu] = useState(false);
@@ -24,64 +26,68 @@ export default function Home() {
         <link rel="icon" href="/favicon.png" />
       </Head>
 
-      <div className={menu ? "" : "hide-menu"}>
+      <motion.div className={menu ? "" : styles["hide-menu"]}>
         <Menu close={() => showMenu(false)} />
-      </div>
+      </motion.div>
 
-      <div className={menu ? "" : ""}>
+      <motion.div className={menu ? "" : ""}>
         <Header menu={() => showMenu(!menu)} />
-      </div>
-      <div className="main">
-        <div className={menu ? "" : "content"}>
+      </motion.div>
+      <motion.div className={styles["main"]}>
+        <motion.div className={menu ? "" : styles.content}>
           <motion.div className="title-1">Eyes</motion.div>
-          <Services
+          <Card
             title="Lash Enhancement"
             img="/images/lash-enhancement.png"
             description={`Using a cosmetic tattoo machine to create a soft shading technique throughout the eyelash area. This technique can create density and give the appearance of a fuller eyelash base. Very natural and suitable for clients that aren't wanting to commit to eyeliner.`}
+            actions
           >
-            <div className="title-3">First Session - $150</div>
-            <div className="title-3">Second Session - $125</div>
-            <div className="title-3">1 year Refesh - $150</div>
-            <div className="title-3">2 year Refesh - $200</div>
-          </Services>
-          <Services
+            <motion.div className="title-3">First Session - $150</motion.div>
+            <motion.div className="title-3">Second Session - $125</motion.div>
+            <motion.div className="title-3">1 year Refesh - $150</motion.div>
+            <motion.div className="title-3">2 year Refesh - $200</motion.div>
+          </Card>
+          <Card
             title="Top Liner"
             img="/images/top-liner.png"
             description={`Using a cosmetic tattoo machine to create a liquid liner look. Thickness and style( wing or no wing) will be decided during the consultation.`}
+            actions
           >
-            <div className="title-3">First Session - $200</div>
-            <div className="title-3">Second Session - $200</div>
-            <div className="title-3">1 year Refesh - $200</div>
-            <div className="title-3">2 year Refesh - $300</div>
-          </Services>
-          <Services
+            <motion.div className="title-3">First Session - $200</motion.div>
+            <motion.div className="title-3">Second Session - $200</motion.div>
+            <motion.div className="title-3">1 year Refesh - $200</motion.div>
+            <motion.div className="title-3">2 year Refesh - $300</motion.div>
+          </Card>
+          <Card
             title="Bottom Liner"
             img="/images/blade.png"
             description={`Using a cosmetic tattoo machine to create a soft powder liner.`}
+            actions
           >
-            <div className="title-3">First Session - $100</div>
-            <div className="title-3">Second Session - $100</div>
-            <div className="title-3">1 year Refesh - $100</div>
-            <div className="title-3">2 year Refesh - $150</div>
-          </Services>
-          <Services
+            <motion.div className="title-3">First Session - $100</motion.div>
+            <motion.div className="title-3">Second Session - $100</motion.div>
+            <motion.div className="title-3">1 year Refesh - $100</motion.div>
+            <motion.div className="title-3">2 year Refesh - $150</motion.div>
+          </Card>
+          <Card
             title="Combo Liner"
             img="/images/combo-liner.png"
             description={`Same technique approach as the top liner procedure, adding on the bottom liner procedure during the same session.`}
+            actions
           >
-            <div className="title-3">First Session - $250</div>
-            <div className="title-3">Second Session - $200</div>
-            <div className="title-3">1 year Refesh - $250</div>
-            <div className="title-3">2 year Refesh - $300</div>
-          </Services>
+            <motion.div className="title-3">First Session - $250</motion.div>
+            <motion.div className="title-3">Second Session - $200</motion.div>
+            <motion.div className="title-3">1 year Refesh - $250</motion.div>
+            <motion.div className="title-3">2 year Refesh - $300</motion.div>
+          </Card>
           <Divider />
-          <FAQ />
+          <Faq />
           <Care />
           <Divider />
           <ServiceList />
           <Copyright />
-        </div>
-      </div>
+        </motion.div>
+      </motion.div>
     </>
   );
 }

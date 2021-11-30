@@ -1,0 +1,33 @@
+$space-xxs: 4px;
+$space-xs: 8px;
+$space-sm: 12px;
+$space-md: 16px;
+$space-lg: 24px;
+$space-xl: 32px;
+$space-xxl: 48px;
+$space-xxxl: 60px;
+
+.space-xxs {
+    padding: $space-xxs;
+}
+.space-xs {
+    padding: $space-xs;
+}
+.space-sm {
+    padding: $space-sm;
+}
+.space-md {
+    padding: $space-md;
+}
+.space-lg {
+    padding: $space-lg;
+}
+.space-xl {
+    padding: $space-xl;
+}
+.space-xxl {
+    padding: $space-xxl;
+}
+.space-xxxl {
+    padding: $space-xxxl;
+}

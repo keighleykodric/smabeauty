@@ -1,0 +1,57 @@
+@import "../../styles/settings/_settings";
+
+.panel {
+  box-sizing: border-box;
+  flex-shrink: 0;
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  transition: all 0.25s ease-in;
+}
+
+.panelHeader {
+  box-sizing: border-box;
+  height: auto;
+  flex-shrink: 0;
+  width: 100%;
+  position: relative;
+  display: flex;
+  gap: $space-xs;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: 800;
+  padding: $space-xxs;
+  transition: all 0.25s ease-in;
+
+  &:hover {
+    color: $color-primary;
+    transition: all 0.25s ease-in;
+  }
+}
+
+.panelContent {
+  box-sizing: border-box;
+  height: auto;
+  flex-shrink: 0;
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 18px;
+  color: $text-color-default;
+  padding: 8px 8px 8px 40px;
+  transition: all 0.25s ease-in;
+}
+
+.panelIcon {
+  width: 24px;
+  height: 24px;
+}

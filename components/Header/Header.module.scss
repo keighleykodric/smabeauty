@@ -1,0 +1,25 @@
+@import "../../styles/settings/_settings";
+
+.header {
+  box-sizing: border-box;
+  height: auto;
+  flex-shrink: 0;
+  bottom: 0px;
+  width: 100%;
+  position: fixed;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: $space-xs;
+  box-shadow: 0px 1px 1px 0px rgba(30, 41, 58, 0.12),
+    0px 2px 2px 0px rgba(30, 41, 58, 0.12),
+    0px 4px 4px 0px rgba(30, 41, 58, 0.12),
+    0px 8px 8px 0px rgba(30, 41, 58, 0.12),
+    0px 16px 16px 0px rgba(30, 41, 58, 0.12);
+//   background-color: rgba(255, 68, 92, 0.9);
+  background-color: $color-primary;
+  backdrop-filter: blur(8px);
+  overflow: hidden;
+  z-index: 999;
+}

@@ -6,6 +6,7 @@ import { Header } from "../components/Header";
 import { Menu } from "../components/Menu";
 import { Divider } from "../components/Divider";
 import { Care } from "../components/Care";
+import { Button } from "../components/Button/index.js";
 import { Copyright } from "../components/Copyright/Copyright";
 import { Faq } from "../components/Faq";
 import { ServiceList } from "../components/ServiceList";
@@ -18,7 +19,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>SMAbeauty - Tiny Tattoos</title>
+        <title>SMAbeauty - Scar Camoflauge</title>
         <meta
           name="description"
           content="Vancouver Island's Cosmetic Tattoo Specialist"
@@ -35,9 +36,9 @@ export default function Home() {
       </div>
       <div className="main">
         <div className={menu ? "" : styles.content}>
-          <motion.div className="title-1">Tiny Tattoos</motion.div>
+          <motion.div className="title-1">Scar Camoflauge</motion.div>
           <Card
-            title="Tattoos"
+            title="Scar Camoflauge"
             img="/images/micro.png"
             description={`Microblading is a tattooing technique that mimics your natural
             hair. It's preformed using a special tool to add pigment to your

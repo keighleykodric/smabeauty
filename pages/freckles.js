@@ -6,10 +6,12 @@ import { Header } from "../components/Header";
 import { Menu } from "../components/Menu";
 import { Divider } from "../components/Divider";
 import { Care } from "../components/Care";
-import { Copyright } from "../components/Copyright";
-import { FAQ } from "../components/FAQ";
+import { Copyright } from "../components/Copyright/Copyright";
+import { Faq } from "../components/Faq";
 import { ServiceList } from "../components/ServiceList";
-import { Services } from "../components/Services";
+import { Card } from "../components/Card";
+
+import styles from "../styles/Home.module.scss";
 
 export default function Home() {
   const [menu, showMenu] = useState(false);
@@ -24,7 +26,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.png" />
       </Head>
 
-      <div className={menu ? "" : "hide-menu"}>
+      <div className={menu ? "" : styles["hide-menu"]}>
         <Menu close={() => showMenu(false)} />
       </div>
 
@@ -32,22 +34,22 @@ export default function Home() {
         <Header menu={() => showMenu(!menu)} />
       </div>
       <div className="main">
-        <div className={menu ? "" : "content"}>
+        <div className={menu ? "" : styles.content}>
           <motion.div className="title-1">Freckles</motion.div>
-          <Services title="Beautymark" img="/images/beautymark.png">
+          <Card title="Beautymark" img="/images/beautymark.png" actions>
             <div className="title-3">First Session - $75</div>
             <div className="title-3">Second Session - $25</div>
-          </Services>
-          <Services title="Sunkissed Face" img="/images/sunkissed-face.png">
+          </Card>
+          <Card title="Sunkissed Face" img="/images/sunkissed-face.png" actions>
             <div className="title-3">First Session - $150</div>
             <div className="title-3">Second Session - $50</div>
-          </Services>
-          <Services title="Sunkissed nose" img="/images/sunkissed-nose.png">
+          </Card>
+          <Card title="Sunkissed nose" img="/images/sunkissed-nose.png" actions>
             <div className="title-3">First Session - $100</div>
             <div className="title-3">Second Session - $50</div>
-          </Services>
+          </Card>
           <Divider />
-          <FAQ />
+          <Faq />
           <Care />
           <Divider />
           <ServiceList />

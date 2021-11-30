@@ -6,13 +6,12 @@ import { motion } from "framer-motion";
 import { Header } from "../components/Header";
 import { Menu } from "../components/Menu";
 import { Divider } from "../components/Divider";
-import { Copyright } from "../components/Copyright";
+import { Card } from "../components/Card";
+import { Copyright } from "../components/Copyright/Copyright";
 import { ServiceList } from "../components/ServiceList";
 import { Phone, Envelope, MapPin } from "phosphor-react";
 
-// Smart Components
-// import Button from "https://framer.com/m/Button-v2hH.js@4tX8nO4PmAUzaEc23X23";
-// import Banner from "https://framer.com/m/Banner-uJuU.js@y83xmRG2YIzsOuVi8I81"
+import styles from "../styles/Home.module.scss";
 
 export default function Home() {
   const [menu, showMenu] = useState(false);
@@ -28,14 +27,14 @@ export default function Home() {
         <link rel="icon" href="/favicon.png" />
       </Head>
 
-      <div className={menu ? "menu" : "hide-menu"}>
+      <div className={menu ? styles.menu : styles["hide-menu"]}>
         <Menu close={() => showMenu(false)} />
       </div>
 
       <div className={menu ? "" : ""}>
         <Header menu={() => showMenu(!menu)} />
       </div>
-      <div className="main">
+      <div className={styles.main}>
         {/* <div className={menu ? "hide-content" : "banner"}>
           <Image
             src="/images/banner.png"
@@ -47,10 +46,7 @@ export default function Home() {
           /> 
           <Banner />
         </div> */}
-        <div
-          //   style={content}
-          className={menu ? "hide-content" : "content"}
-        >
+        <div className={menu ? "hide-content" : styles.content}>
           <Image
             src="/images/sma-logo.png"
             alt="Mapping"
@@ -62,43 +58,26 @@ export default function Home() {
           <motion.div className="title-1 center">{`Vancouver Island's Cosmetic Tattoo Specialist`}</motion.div>
           <ServiceList />
           <Divider />
-          <div className="card">
-            <div className="card-header">
-              <div className="card-title">
-                <div className="title-2">About</div>
-              </div>
-              <div className="divider"></div>
-            </div>
-
-            <div className="card-content">
-              <div className="image-container">
-                <Image
-                  src="/images/shan.png"
-                  alt="Shan"
-                  height="239px"
-                  width="137px"
-                />
-              </div>
-              Hands down the best on the island, just ask our clients. We
-              approach every <b>cosmetic tattoo</b> procedure with the up most care and
-              professionalism. Our artist at SMA Beauty work with you to create
-              a customized and professional experience. Our knowledgeable team
-              of cosmetic tattoo artist use their creative and technical skills
-              to offer a realistic cosmetic tattoo that will enhance your
-              natural facial feature and personal style.
-            </div>
-          </div>
+          <Card title="About">
+            <motion.div className={styles["image-container"]}>
+              <Image
+                src="/images/shan.png"
+                alt="Shan"
+                height="239px"
+                width="137px"
+              />
+            </motion.div>
+            Hands down the best on the island, just ask our clients. We approach
+            every <b>cosmetic tattoo</b> procedure with the up most care and
+            professionalism. Our artist at SMA Beauty work with you to create a
+            customized and professional experience. Our knowledgeable team of
+            cosmetic tattoo artist use their creative and technical skills to
+            offer a realistic cosmetic tattoo that will enhance your natural
+            facial feature and personal style.
+          </Card>
           <Divider />
-          <div className="card">
-            <div className="card-header">
-              <div className="card-title">
-                <div className="title-2">Contact</div>
-              </div>
-              <div className="divider"></div>
-            </div>
-
-            <div className="card-content">
-              <ul>
+          <Card title="Contact">
+            <ul>
                 <li>
                   <a href="tel:250-616-0854">
                     <Phone color="#FF445C" weight="fill" size={24} />
@@ -119,8 +98,7 @@ export default function Home() {
                   </address>
                 </li>
               </ul>
-            </div>
-          </div>
+          </Card>
           <Copyright />
         </div>
       </div>

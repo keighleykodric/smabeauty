@@ -1,0 +1,60 @@
+@import "./settings/_settings";
+
+.title-1 {
+  width: 100%;
+  height: auto; /* 28px */
+  flex-shrink: 0;
+  overflow: visible;
+  /* white-space: pre; */
+  max-width:512px;
+  font-weight: 800;
+  font-style: normal;
+  color: $text-color-default;
+  font-size: $text-size-lg;
+  letter-spacing: 0px;
+  line-height: 1.2;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    overflow: visible;
+    justify-content: flex-start;
+}
+.title-2 {
+  width: auto; /* 92px */
+  height: auto; /* 28px */
+  margin-bottom: $space-xs;
+  flex-shrink: 0;
+  overflow: visible;
+  white-space: pre;
+  font-weight: 800;
+  font-style: normal;
+  color: $text-color-default;
+  font-size: $text-size-lg;
+  letter-spacing: 0px;
+  line-height: 1.2;
+}
+.title-3 {
+  width: auto; /* 92px */
+  height: auto; /* 28px */
+  flex-shrink: 0;
+  overflow: visible;
+  white-space: pre;
+  font-weight: 800;
+  font-style: normal;
+  color: $text-color-default;
+  font-size: 20px;
+  letter-spacing: 0px;
+  line-height: 1.2;
+}
+.body {
+  width: auto; /* 92px */
+  height: auto; /* 28px */
+  flex-shrink: 0;
+  overflow: visible;
+  /* white-space: pre; */
+  font-weight: 400;
+  font-style: normal;
+  color: $text-color-light;
+  font-size: 18px;
+  letter-spacing: 0px;
+  line-height: 1.6;
+}

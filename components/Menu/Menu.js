@@ -1,6 +1,5 @@
 import Link from "next/link";
 import { motion } from "framer-motion";
-// import Button from "https://framer.com/m/Button-v2hH.js@Ov6Fct6PQvBgEbCDFQRF";
 import { Button } from "../Button";
 
 import styles from "./Menu.module.scss";
@@ -9,7 +8,7 @@ export const Menu = ({ close, ...rest }) => {
   return (
     <div {...rest} onClick={close} className={styles.menu}>
       <Link href="/brows" passHref>
-        <Button href="/brows" label="Brows" variant="Text-Primary" />
+        <Button label="Brows" variant="Text-Primary" />
       </Link>
       <Link href="/eyes" passHref>
         <Button label="Eyes" variant="Text-Primary" />

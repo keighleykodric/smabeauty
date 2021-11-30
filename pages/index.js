@@ -54,6 +54,8 @@ export default function Home() {
             sizes="100vw"
             width="256px"
             height="256px"
+            placeholder="blur"
+            blurDataURL="/images/sma-logo.png"
           />
           <motion.div className="title-1 center">{`Vancouver Island's Cosmetic Tattoo Specialist`}</motion.div>
           <ServiceList />

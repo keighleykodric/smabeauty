@@ -1,5 +1,5 @@
-import "../styles/global.scss"
-import "../styles/settings/_typography.scss";
+import "../styles/Global.scss"
+import "../styles/Typography.scss";
 import "./styles.scss";
 
 function MyApp({ Component, pageProps }) {

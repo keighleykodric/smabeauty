@@ -1,7 +1,6 @@
 import { motion } from "framer-motion";
+import { Button } from "../Button";
 import styles from "./Card.module.scss";
-
-import Button from "https://framer.com/m/Button-v2hH.js@Ov6Fct6PQvBgEbCDFQRF";
 
 const CardHeader = ({ title, description, className }) => {
   let cardClassName = styles.card;

@@ -1,6 +1,5 @@
 import { motion } from "framer-motion";
 import Link from "next/link";
-// import Button from "https://framer.com/m/Button-Xr7C.js@AVBjfATv1vRM2xRJSPbE";
 import { Button } from "../Button";
 
 import styles from "./Header.module.scss";

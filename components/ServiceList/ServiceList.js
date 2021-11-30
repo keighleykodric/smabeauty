@@ -30,7 +30,7 @@ export const ServiceList = ({ children, className, ...rest }) => {
         <Link href="/tiny-tattoos" passHref>
           <Service className={styles.service} variant="Tiny Tattoos" />
         </Link>
-        <Link href="/scare-camouflage" passHref>
+        <Link href="/scarcamouflage" passHref>
           <Service className={styles.service} variant="Scar Camouflage" />
         </Link>
       </Card>

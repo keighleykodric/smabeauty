@@ -26,7 +26,7 @@ export const Menu = ({ close, ...rest }) => {
       <Link href="/tiny-tattoos" passHref>
         <Button label="Tiny Tattoos" variant="Text-Primary" />
       </Link>
-      <Link href="/scar-camouflage" passHref>
+      <Link href="/scarcamouflage" passHref>
         <Button label="Scar Camouflage" variant="Text-Primary" />
       </Link>
       <Button

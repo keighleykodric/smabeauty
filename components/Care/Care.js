@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
-import Button from "https://framer.com/m/Button-Xr7C.js@AVBjfATv1vRM2xRJSPbE";
-// import { Button } from "../Button/Button";
+// import Button from "https://framer.com/m/Button-Xr7C.js@AVBjfATv1vRM2xRJSPbE";
+import { Button } from "../Button/Button";
 import { Card } from "../Card/Card";
 
 import styles from "./Care.module.scss";
